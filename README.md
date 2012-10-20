@@ -17,6 +17,8 @@ Setup Instructions
 
         $ curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
+        Note: You might need to use sudo
+
     4. Install the ascii art script.
 
         $ pip install git+https://github.com/shiva/asciiart.git
