@@ -17,7 +17,7 @@ Setup Instructions
 
         $ curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
-    Note: You might need to use sudo
+    Note: You might need to use sudo. See Misc section for more info on pip, virtualenv and other python goodness.
 
  4. Install the ascii art script.
 
