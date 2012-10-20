@@ -11,15 +11,15 @@ You can reach the primary developer of this module, Shiva, at [shiv@shiv.me](mai
 Setup Instructions
 ------------------
 
-    1. You need a unix distro.
-    2. Install python 2.7
-    3. Install pip
+ 1. You need a unix distro.
+ 2. Install python 2.7
+ 3. Install pip
 
         $ curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
-        Note: You might need to use sudo
+    Note: You might need to use sudo
 
-    4. Install the ascii art script.
+ 4. Install the ascii art script.
 
         $ pip install git+https://github.com/shiva/asciiart.git
 
