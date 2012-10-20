@@ -36,7 +36,7 @@ Misc
 ----
 
 More info about 
-    * [pip](http://www.pip-installer.org/en/latest/installing.html)
-    * [virtualenv](http://pypi.python.org/pypi/virtualenv)
-    * [vritualenvwrapper](http://www.doughellmann.com/projects/virtualenvwrapper/)
+ * [pip](http://www.pip-installer.org/en/latest/installing.html)
+ * [virtualenv](http://pypi.python.org/pypi/virtualenv)
+ * [vritualenvwrapper](http://www.doughellmann.com/projects/virtualenvwrapper/)
 
