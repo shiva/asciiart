@@ -1,10 +1,10 @@
-#! /usr/bin/python
+#!/usr/bin/env python
 
 import sys
 from pyfiglet import Figlet
 from optparse import OptionParser
 
-def draw(f, font, text): 
+def draw_text(f, font, text): 
     f.setFont(font=font)
     print f.renderText(text)
 
@@ -24,8 +24,8 @@ def main(args):
         for font in f.getFonts():
             print font
     else:   
-        draw(f, options.font, 'Thanks Levi & Andras')
-        draw(f, options.font, 'for the cards !!!') 
+        draw_text(f, options.font, 'Thanks Levi & Andras')
+        draw_text(f, options.font, 'for the cards !!!') 
 
 if __name__ == "__main__":
 	sys.exit(main(sys.argv[1:]))

@@ -5,8 +5,8 @@ setup(
     version='0.0.2',
     author='Shiva Velmurugan',
     author_email='shiv@shiv.me',
-    scripts=['bin/art.py'],
-    url='https://github.com/shiva/asciiart'
+    scripts=['scripts/art.py'],
+    url='https://github.com/shiva/asciiart',
     license='LICENSE.md',
     description='Generate Ascii Art using pyfiglet.',
     long_description=open('README.md').read(),
