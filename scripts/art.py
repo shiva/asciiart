@@ -4,12 +4,28 @@ import sys
 from pyfiglet import Figlet
 from optparse import OptionParser
 
-def draw_text(f, font, text): 
-    f.setFont(font=font)
-    print f.renderText(text)
+def draw_text(figlet, font, textlist): 
+    figlet.setFont(font=font)
+    for t in textlist:
+        print figlet.renderText(t)
 
+def list_fonts(figlet, count=10):
+    fonts = figlet.getFonts()
+    nrows = len(fonts)/count
+    if len(fonts) % count != 0:
+        nrows += 1
+
+    print "Available fonts in the system"
+    print
+    for start in range(0, nrows):
+        items = fonts[start*count:(start+1)*count]
+        for item in items:
+            print item + "\t",
+        print
+    
 def main(args):
-    parser = OptionParser()
+    usage = "Usage: %prog <options> <line 1> <line 2> ..."
+    parser = OptionParser(usage)
     parser.add_option("-f", "--font", help="specify the font", 
                 action="store", type="string", dest="font", default='clr8x8')
     parser.add_option("-l", "--list", help="list available fonts", 
@@ -21,11 +37,10 @@ def main(args):
 
     f = Figlet()
     if options.listfonts:
-        for font in f.getFonts():
-            print font
+        list_fonts(f)
     else:   
-        draw_text(f, options.font, 'Thanks Levi & Andras')
-        draw_text(f, options.font, 'for the cards !!!') 
+        tlist = args
+        draw_text(f, options.font, tlist)
 
 if __name__ == "__main__":
 	sys.exit(main(sys.argv[1:]))
